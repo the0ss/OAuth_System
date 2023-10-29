@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'allauth.socialaccount.providers.microsoft'
+    'allauth.socialaccount.providers.microsoft',
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -60,7 +62,7 @@ ROOT_URLCONF = 'oauth_system.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,7 +122,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-
+STATICFILES_DIRS = [
+    BASE_DIR / 'oauth_system/static'
+]
 STATIC_URL = 'static/'
 
 # Default primary key field type
@@ -149,3 +153,8 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 LOGIN_REDIRECT_URL='home'
+
+ACCOUNT_LOGOUT_REDIRECT_URL='account_login'
+
+CRISPY_TEMPLATE_PACK='bootstrap5'
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
