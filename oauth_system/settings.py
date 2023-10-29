@@ -137,3 +137,15 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 
 ]
+
+# kS48Q~tIgxm0E2FWLqlqXCO_68RTw~1mgd3yXb8z
+# 0ac8f8b9-195b-4a35-922a-70666930d396
+
+SOCIALACCOUNT_PROVIDERS = {
+    "microsoft": {
+        'AUTH_PARAM':{'prompt':'consent','display':'popup'},
+        'SCOPE':['User.Read'],
+        'AUTH_PARAM':{'prompt':'consent'},
+    }
+}
+LOGIN_REDIRECT_URL='home'
