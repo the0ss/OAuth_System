@@ -3,7 +3,7 @@
 ### Setting up the Project(Windows)
 -   Install Python
 -   It is suggested to have a dedicated virtual environment for each Django project, and one way to manage a virtual environment is venv, which is included in Python.
-    ``py -m venv env``
+    ```py -m venv env```
 -   Enter in virutal environment
     ``env\Scripts\activate.bat``
 -   Remember to install Djnago in your virtual environment
