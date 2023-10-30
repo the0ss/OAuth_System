@@ -3,19 +3,31 @@
 ### Setting up the Project(Windows)
 -   Install Python
 -   It is suggested to have a dedicated virtual environment for each Django project, and one way to manage a virtual environment is venv, which is included in Python.
-    ```py -m venv env```
+    ```
+    py -m venv env
+    ```
 -   Enter in virutal environment
-    ``env\Scripts\activate.bat``
+    ```
+    env\Scripts\activate.bat
+    ```
 -   Remember to install Djnago in your virtual environment
-    ``(env) C:\Users\Your Name>py -m pip install Django``
+    ```
+    (env) C:\Users\Your Name>py -m pip install Django
+    ```
 -   Then, clone this repo into the env
-    ``git clone 'repo_url'``
+    ```
+    git clone 'repo_url'
+    ```
 -   Install required apps
-    ``pip install django-allauth``
-    ``pip install django-crispy-forms``
-    ``pip install crispy-bootstrap5``
+    ```
+    pip install django-allauth
+    pip install django-crispy-forms
+    pip install crispy-bootstrap5
+    ```
 -   Now you can run the server using
-    ``python manage.py runserver``
+    ```
+    python manage.py runserver
+    ```
 
 ### Already Included in code(Only for understanding)
 
